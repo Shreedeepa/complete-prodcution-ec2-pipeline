@@ -26,7 +26,7 @@ pipeline{
     
         stage("Checkout from SCM"){
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Shreedeepa/complete-prodcution-ec2-pipeline'
+                git branch: 'main', credentialsId: 'github-user', url: 'https://github.com/Shreedeepa/complete-prodcution-ec2-pipeline'
             }
         }
         
