@@ -78,7 +78,7 @@ pipeline{
         stage("Trivy Scan") {
             steps {
                 script {
-		   sh ('docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image Shreedeepa/complete-prodcution-ec2-pipeline:1.0.0-11 --no-progress --scanners vuln  --exit-code 0 --severity HIGH,CRITICAL --format table')
+		   sh ('docker run -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image deepashreekl/complete-prodcution-ec2-pipeline:1.0.0-11 --no-progress --scanners vuln  --exit-code 0 --severity HIGH,CRITICAL --format table')
                 }
             }
         }
